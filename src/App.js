@@ -7,6 +7,12 @@ function App() {
   return (
     <div className="App">
       <p>new</p>
+      <iframe
+        width="500"
+        height="500"
+        src="https://next442-tdelar.vercel.app/"
+        title="description"
+      ></iframe>
       <Map
         initialViewState={{
           longitude: -100,
