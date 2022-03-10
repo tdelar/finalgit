@@ -7,8 +7,7 @@ function App() {
   return (
     <div className="bg-blue-50">
       <h1 className="text-3xl font-bold text-center">
-        How location effects real estate prices throughout united states and
-        factors Influencing prices
+        Real Estate Price and Rent Distributions in The United States.
       </h1>
 
       <h1 className="text-3xl font-bold underline px-4">Overview</h1>
@@ -16,18 +15,18 @@ function App() {
       <p className="px-10 py-1">
         Location plays a key role in real estate prices and rents throughout the
         country. A one bedroom place in New York City has a median cost of
-        _______ and a one bedroom place in ______ has a median cost of ____.
+        $767425 and a one bedroom place in Memphis has a median cost of $118965.
         This guide will take you through the distribution of these price
-        differences and the factors that cause them. It will also show you how
-        you can analyze real estate prices with the Location Analysis console.
-        This guide is specifically useful for people looking to rent or buy
-        housing in an area to see how their costs compare to others. It will
-        show you how rents and prices are distributed for 1 bedroom, 2 bedroom,
-        3 bedroom housing and other important area factors such as median
-        incomes, population and unemployment rates.
+        differences. It will also show you how you can analyze real estate
+        prices with the Location Analysis console. This guide is specifically
+        useful for people looking to rent or buy housing in an area to see how
+        their costs compare to others. It will show you how rents and prices are
+        distributed for 1 bedroom, 2 bedroom, 3 bedroom housing and other
+        important area factors such as poverty rates, population and
+        unemployment rates.
       </p>
       <h1 className="text-3xl font-bold underline px-4 ">
-        How are housing prices distributed throughout the country:
+        How are housing prices distributed throughout the country?
       </h1>
       <p className="px-10">
         There are clear trends when it comes to how housing prices are
