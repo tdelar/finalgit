@@ -9,6 +9,7 @@ function App() {
       <h1 className="text-3xl font-bold text-center">
         Real Estate Price and Rent Distributions in The United States.
       </h1>
+      <p className="text-center">by Thomas Delargy</p>
 
       <h1 className="text-3xl font-bold underline px-4">Overview</h1>
 
@@ -56,11 +57,20 @@ function App() {
         ></iframe>
       </div>
       <h1 className="text-3xl font-bold underline px-4">Tutorial</h1>
-      <p className="px-10">1. Select Boundary type either County or Zip Code</p>
-      <p className="px-10">2. Select Chlorpleth on what feature</p>
+      <p className="px-10">
+        1. Select Boundary type either County or Zip Code.
+      </p>
+      <p className="px-10">
+        2. Select Chlorpleth on what feature. The darker the blue the higher the
+        value for all options.
+      </p>
       <p className="px-10">
         3. Select County or Zip Code by clicking on area and seeing area data on
-        side panel
+        side panel.
+      </p>
+      <p className="px-10">
+        4. Navigate map how you would any other by pinching or clicking and
+        dragging.
       </p>
 
       <h1 className="text-3xl font-bold underline px-4">
