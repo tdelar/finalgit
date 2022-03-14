@@ -55,12 +55,58 @@ function App() {
           title="description"
         ></iframe>
       </div>
-      <h1 className="text-3xl font-bold underline ">Tutorial</h1>
-      <p>1. Select Boundary type either County or Zip Code</p>
-      <p>2. Select Chlorpleth on what feature</p>
-      <p>
-        3. Select county or zipcode by clicking on area and seeing area data on
+      <h1 className="text-3xl font-bold underline px-4">Tutorial</h1>
+      <p className="px-10">1. Select Boundary type either County or Zip Code</p>
+      <p className="px-10">2. Select Chlorpleth on what feature</p>
+      <p className="px-10">
+        3. Select County or Zip Code by clicking on area and seeing area data on
         side panel
+      </p>
+
+      <h1 className="text-3xl font-bold underline px-4">
+        Where is the Data From?
+      </h1>
+      <p className="px-10">
+        The Location Analysis Consoles data is from a few sources. The
+        population, poverty rate, and unemployment rate data is from Open Intro
+        which takes American Community Survey data. The Housing prices come from
+        Zillows open data sets. Finally, rental prices come from Hud User fair
+        market rent values.
+      </p>
+      <h1 className="text-3xl font-bold underline px-4">Design Decisions</h1>
+      <p className="px-10">
+        I chose to use an interactive map as my only visualization technique
+        because I believe it was the only tool necessary to show price and rent
+        distributions in the United States. In the map I choose to use lighter
+        and darker blue for the choropleth to show how smaller and lower values
+        were distributed. I did this because It is a good way to show
+        quantitative data distribution and how it compares. I decided to not use
+        another interactive visualization technique because of time limits and
+        didn’t feel any would help draw much more insights. One design I
+        considered was the ability to compare different Zip Codes with a bar
+        graph for each of the features. I decided not to do this because I think
+        it would add complexity without much benefit.
+      </p>
+
+      <h1 className="text-3xl font-bold underline px-4">Development Process</h1>
+      <p className="px-10">
+        I did this project solo and spent 50-60 hours on it. Most of the work
+        was spent on creating the location analysis console. I used react-map-gl
+        to do this, which is a Mapbox library used for creating React Mapbox
+        applications. To create it I first found CSV data sets from Zillow, Hud
+        User, and Open Intro. I then transformed Census shape files to GeoJSON
+        so I could merge the datasets into the geojson property feature. I did
+        this by putting the csv files into MySql and merging them into the
+        GeoJSON files with Express. I then could add these GeoJson files into
+        Mapbox which created Tilesets that are the layers shown on the map. To
+        style the side bar and dropdowns that display the data I used Tailwind
+        UI. The hardest part of the project was figuring out how I was actually
+        going to implement the location console and learning how to use the
+        right tools to do it. I eventually settled on using mapbox but it took
+        significant time understanding how to use the library. Another part that
+        was difficult was merging the CSV files into the GeoJSON files. This
+        took significant Javascript code and many attempts to actually format it
+        correctly.
       </p>
     </div>
   );
