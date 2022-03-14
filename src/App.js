@@ -34,9 +34,9 @@ function App() {
         coast generally are significantly more expensive than the center of the
         country for both housing cost and rent. Another trend we can see is that
         higher density areas are significantly more expensive than lower density
-        areas. To see this distribution select the boundary has County and
-        choropleth type as population. You can then select a specific county by
-        clicking on it and seeing there counties information in the side bar.
+        areas. To see this distribution select the boundary as County and
+        choropleth type as population. You can then select a specific County by
+        clicking on it and seeing the Counties information in the side bar.
       </p>
 
       <h1 className="text-3xl font-bold underline ">
@@ -78,7 +78,7 @@ function App() {
         I chose to use an interactive map as my only visualization technique
         because I believe it was the only tool necessary to show price and rent
         distributions in the United States. In the map I choose to use lighter
-        and darker blue for the choropleth to show how smaller and lower values
+        and darker blue for the choropleth to show how smaller and larger values
         were distributed. I did this because It is a good way to show
         quantitative data distribution and how it compares. I decided to not use
         another interactive visualization technique because of time limits and
@@ -91,13 +91,13 @@ function App() {
       <h1 className="text-3xl font-bold underline px-4">Development Process</h1>
       <p className="px-10">
         I did this project solo and spent 50-60 hours on it. Most of the work
-        was spent on creating the location analysis console. I used react-map-gl
+        was spent on creating the Location Analysis console. I used react-map-gl
         to do this, which is a Mapbox library used for creating React Mapbox
         applications. To create it I first found CSV data sets from Zillow, Hud
         User, and Open Intro. I then transformed Census shape files to GeoJSON
         so I could merge the datasets into the geojson property feature. I did
-        this by putting the csv files into MySql and merging them into the
-        GeoJSON files with Express. I then could add these GeoJson files into
+        this by putting the CSV files into MySql and merging them into the
+        GeoJSON files with Express. I then could add these GeoJSON files into
         Mapbox which created Tilesets that are the layers shown on the map. To
         style the side bar and dropdowns that display the data I used Tailwind
         UI. The hardest part of the project was figuring out how I was actually
